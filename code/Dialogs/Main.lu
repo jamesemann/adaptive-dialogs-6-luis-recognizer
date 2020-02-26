@@ -1,0 +1,27 @@
+﻿# Greeting
+- Hi
+- Hello
+- Good morning
+- Good evening
+- Hey
+
+# Help
+- help
+- I need help
+- please help
+
+# BookFlight
+- book flight from {city:fromCity} to {city:toCity}
+- [can you] get me a flight from {city:fromCity} to {city:toCity}
+- get me a flight to {city:toCity}
+- I need to fly from {city:fromCity}
+
+$city:Seattle=
+- Seattle
+- Tacoma
+- SeaTac
+- SEA
+
+$city:Portland=
+- Portland
+- PDX

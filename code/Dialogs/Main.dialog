@@ -1,0 +1,39 @@
+{
+  "$schema": "../app.schema",
+  "$kind": "Microsoft.AdaptiveDialog",
+  "autoEndDialog": "true",
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnIntent",
+      "intent": "Greeting",
+      "actions": [
+        {
+          "$type": "Microsoft.SendActivity",
+          "activity": "greeting intent matched"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "intent": "Help",
+      "actions": [
+        {
+          "$type": "Microsoft.SendActivity",
+          "activity": "help intent matched"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "intent": "BookFlight",
+      "actions": [
+        {
+          "$type": "Microsoft.SendActivity",
+          "activity": "book flight intent matched"
+        }
+      ]
+    }
+  ],
+  "recognizer": "Main.lu"
+}

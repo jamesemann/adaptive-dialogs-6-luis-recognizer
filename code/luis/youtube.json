@@ -1,0 +1,112 @@
+{
+  "intents": [
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "BookFlight"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "city",
+      "subLists": [
+        {
+          "canonicalForm": "Seattle",
+          "list": [
+            "Seattle",
+            "Tacoma",
+            "SeaTac",
+            "SEA"
+          ]
+        },
+        {
+          "canonicalForm": "Portland",
+          "list": [
+            "Portland",
+            "PDX"
+          ]
+        }
+      ],
+      "roles": [
+        "fromCity",
+        "toCity"
+      ]
+    }
+  ],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "Hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "Hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "Good morning",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "Good evening",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "Hey",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "I need help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "please help",
+      "intent": "Help",
+      "entities": []
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "book flight from {city:fromCity} to {city:toCity}",
+      "intent": "BookFlight"
+    },
+    {
+      "pattern": "[can you] get me a flight from {city:fromCity} to {city:toCity}",
+      "intent": "BookFlight"
+    },
+    {
+      "pattern": "get me a flight to {city:toCity}",
+      "intent": "BookFlight"
+    },
+    {
+      "pattern": "I need to fly from {city:fromCity}",
+      "intent": "BookFlight"
+    }
+  ],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [],
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "youtube",
+  "desc": "",
+  "culture": "en-us"
+}

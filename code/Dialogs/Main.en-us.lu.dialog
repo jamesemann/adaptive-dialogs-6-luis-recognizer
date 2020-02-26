@@ -1,0 +1,6 @@
+{
+  "$type": "Microsoft.LuisRecognizer",
+  "applicationId": "",
+  "endpoint": "https://westus.api.cognitive.microsoft.com/",
+  "endpointKey": ""
+}
